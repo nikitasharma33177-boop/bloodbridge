@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BloodLink - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home">
+  <div class="container">
+    <h1>🩸 BloodLink</h1>
+    <p>Donate Blood. Save Lives.</p>
+
+    <div class="buttons">
+      <button onclick="window.location.href='donor.html'">I am a Donor</button>
+      <button onclick="window.location.href='organiser.html'">I am an Organizer</button>
+    </div>
+
+    <h2 style="margin-top:40px;">Upcoming Blood Drives 🗓</h2>
+    <div id="events-list"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

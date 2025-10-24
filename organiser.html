@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BloodLink - Organizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Register a Blood Drive 🏕</h1>
+    <form id="event-form">
+      <input type="text" id="camp_name" placeholder="Camp Name" required />
+      <input type="text" id="location" placeholder="Location" required />
+      <input type="date" id="event_date" required />
+      <input type="text" id="contact" placeholder="Contact Number" required />
+      <button type="submit">Add Drive</button>
+    </form>
+
+    <h2>Registered Blood Drives:</h2>
+    <div id="organiser-events"></div>
+
+    <br>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
